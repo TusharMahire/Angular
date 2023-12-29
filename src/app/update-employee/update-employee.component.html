@@ -1,0 +1,22 @@
+<div class="container col-md-6">
+    <h3 style="color:red;">Update Employee</h3>
+    <form class="container" (ngSubmit)="updateEmployeeData()">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Employee Id</label>
+            <input type="email" class="form-control" id="id" name="id" [(ngModel)]="employee.id">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Employee Email address</label>
+            <input type="email" class="form-control" id="email" name="email" [(ngModel)]="employee.email">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">First Name</label>
+            <input type="firstName" class="form-control" id="firstName" name="firstName" [(ngModel)]="employee.firstName">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Last Name</label>
+            <input type="lastName" class="form-control" id="lastName" name="lastName" [(ngModel)]="employee.lastName">
+        </div>
+        <button type="submit" class="btn btn-primary">Update Register</button>
+    </form>
+</div>
